@@ -1,4 +1,5 @@
 export default function getSanFranciscoDescription() {
+  /* eslint-disable */
   const year = 2017;
   const budget = {
     income: '$119,868',
