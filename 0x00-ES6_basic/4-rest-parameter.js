@@ -1,4 +1,4 @@
-export default function returnHowManyArguments() {
+export default function returnHowManyArguments(...array) {
   /* eslint-disable */
   return (array.length);
 }
