@@ -1,4 +1,4 @@
-export { uploadPhoto, createUser } from './utils'
+import { uploadPhoto, createUser } from '../alx-frontend-javascript/utils.js'
 
 export default function handleProfileSignup() {
   /* eslint-disable */
