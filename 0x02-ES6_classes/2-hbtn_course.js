@@ -1,4 +1,5 @@
 export default class HolbertonCourse {
+  /* eslint-disable */
   constructor(name, length, students) {
     if (typeof name === 'string') {
       this._name = name;
