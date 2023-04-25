@@ -1,6 +1,10 @@
-export default function getListStudentIds(studentArray) {
-  /* eslint-disable */
-  if (!Array.isArray(studentIdArray)) {
-    return [];
+const getListStudentsIds = (listStudents) => {
+  let listStudentIds = [];
+  if (!(listStudents instanceof Array)) {
+    return listStudentIds;
   }
-  return studentIdArray.m
+  listStudentIds = listStudents.map((student) => student.id);
+  return listStudentIds;
+};
+
+export default getListStudentIds;
