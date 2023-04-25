@@ -1,5 +1,4 @@
 export default function getListStudents() {
-  /* eslint-diable */
   const students = [
     { id: 1, firstName: 'Guillame', location: 'San Francisco' },
     { id: 2, firstName: 'James', location: 'Columbia' },
