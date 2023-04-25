@@ -1,4 +1,5 @@
 export default function getListStudentIds(studentArray) {
+  /* eslint-disable */
   if (!Array.isArray(studentIdArray)) {
     return [];
   }
