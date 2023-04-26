@@ -31,3 +31,10 @@ const director1: Directors= {
   numbeOfReports: 17;
 };
 console.log(director1);
+
+// prints a Teachers name in this format: J. Doe
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName[0]}. ${lastName}`;
+}
+
+console.log(printTeacher('Harley', 'Searle'));
