@@ -38,3 +38,39 @@ function printTeacher(firstName: string, lastName: string): string {
 }
 
 console.log(printTeacher('Harley', 'Searle'));
+
+// studentClass description interface
+interface studentClassInterface {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+// constructor description interface
+interface classConstructor {
+  new (firstName: string, lastName: string): studentClassInterface;
+}
+// Creating class and constructor through interfaces
+class StudentClass implements classInterface {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+// creating instance of StudentClass
+const studentClass: StudentClass = new StudentClass('Nora', 'Sanchez');
+console.log(studentClass.displayName());
+console.log(studentClass.workOnHomework());
